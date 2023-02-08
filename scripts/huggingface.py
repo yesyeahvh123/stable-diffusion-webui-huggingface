@@ -119,7 +119,7 @@ def on_ui_tabs():
         """)
         with gr.Group():
             with gr.Box():
-                command = gr.Textbox(show_label=False, max_lines=1, placeholder="command")
+                command = gr.Textbox(show_label=False, max_lines=100, placeholder="command")
                 out_text = gr.Textbox(show_label=False)
                 btn_run = gr.Button("run command")
                 btn_run.click(run, inputs=command, outputs=out_text)
