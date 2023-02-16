@@ -8,7 +8,7 @@ from subprocess import getoutput
 
 def run(command):
     out = getoutput(f"{command}")
-    print(out)
+    print(Done)
     return "Done"
 
 def push_folder(folder_from, folder_to, branch, token):
